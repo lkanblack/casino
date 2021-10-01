@@ -1,0 +1,139 @@
+body, * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  background-size: 55%;
+}
+
+p {
+  color: #616161;
+  font-weight: 400px;
+}
+
+.orange-btn {
+  background: linear-gradient(266.16deg, #F0AA41 0%, #FF7A00 101.84%);
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-box-shadow: 0px 8px 17px 0px #EB9B0069;
+          box-shadow: 0px 8px 17px 0px #EB9B0069;
+}
+
+.orange-btn:hover {
+  -webkit-box-shadow: 0px 8px 17px 0px #f8a50091;
+          box-shadow: 0px 8px 17px 0px #f8a50091;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+  color: #414141;
+}
+
+header .header_btns .btn {
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hero {
+  height: 90vh;
+  margin-top: 140px;
+  z-index: 2;
+}
+
+.hero h1 {
+  width: 50%;
+  color: #4E2F00;
+  font-size: 50px;
+  line-height: 66px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  width: 25%;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.hero .terms {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .terms .term-block {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 312px;
+  height: 68px;
+}
+
+.hero .terms .term-block img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.hero .terms .term-block h3 {
+  font-size: 16px;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+.hero .terms .term-block p {
+  width: 100%;
+  font-size: 12px;
+  width: 233px;
+  line-height: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer a {
+  color: #414141;
+  font-size: 12px;
+  line-height: 24px;
+  margin-right: 24px;
+}
+
+footer a:hover {
+  color: #414141;
+}
+
+footer p {
+  color: #979797;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 95px;
+}
+/*# sourceMappingURL=style.css.map */

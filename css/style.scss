@@ -1,0 +1,121 @@
+$brown: #4E2F00;
+$dark-grey: #414141;
+$grey: #616161;
+$light-grey: #BDBDBD;
+$dim-grey: #979797;
+
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', sans-serif;
+
+
+body,* {
+    font-family: $roboto;
+}
+body {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: 55%;
+     
+}
+p {
+    color: $grey;
+    font-weight: 400px;
+}
+.orange-btn {
+    background: linear-gradient(266.16deg, #F0AA41 0%, #FF7A00 101.84%);
+    padding: 10px 12px;
+    border:none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 8px 17px 0px #EB9B0069;
+    &:hover {
+        box-shadow: 0px 8px 17px 0px #f8a50091;
+        transition: 0.2s;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    color: $dark-grey;
+
+    .header_btns {
+        .btn {
+            border:1px solid $light-grey;
+            border-radius: 4px;
+            padding: 6px 12px;
+            margin-left: 16px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+.hero {
+    height: 90vh;
+    margin-top: 140px;
+    z-index: 2;
+    h1 {
+        width: 50%;
+        color: $brown;
+        font-size: 50px;
+        line-height: 66px;
+        font-family: $roboto-slab;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+    p {
+        width: 25%;
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+    .terms {
+        margin-top: 140px;
+        display: flex;
+        .term-block {
+            margin-right: 20px;
+            display: flex;
+            width: 312px;
+            height: 68px;
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px;
+            }
+            h3 {
+                font-size: 16px;
+                font-family: $roboto-slab;
+                margin-bottom: 8px;
+                line-height: 20px;
+            }
+            p {
+                width: 100%;
+                font-size: 12px;
+                width: 233px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    a {
+        color: $dark-grey;
+        font-size: 12px;
+        line-height: 24px;
+        margin-right: 24px;
+        &:hover {
+            color: $dark-grey;
+        }
+    }
+    p {
+        color: $dim-grey;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 95px;
+    }
+}
