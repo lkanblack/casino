@@ -36,6 +36,125 @@ p {
         transition: 0.2s;
     }
 }
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 2;
+    opacity: 80%;
+}
+.cookies {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 24px 32px;
+    h3 {
+        font-family: $roboto-slab;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 16px;
+        a {
+            text-decoration: underline;
+        }
+    }
+    p {
+        font-size: 12px;
+        font-weight: 18px;
+    }
+    button {
+        width: 126px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .reject {
+        border: 1px solid $dim-grey;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-left: 24px;
+        color: $dark-grey;
+    }
+}
+.games {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    width: 700px;
+    height: auto;
+    z-index: 3;
+    background-color: #fff;
+    padding: 24px 32px;
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            font-family: $roboto-slab;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 35px;
+            width: 50%;
+            color: $brown;
+            span {
+                font-weight: 700;
+            }
+        }
+        img {
+            cursor: pointer;
+            height: 24px;
+        }
+    }
+    &_main {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 200px;
+            img {
+                border-radius: 6px;
+            }
+            h3 {
+                font-family: $roboto-slab;
+                color: $brown;
+                font-size: 16px;
+                line-height: 21px;
+                margin-top: 8px;
+            }
+            .rating {
+                display: flex;
+                justify-content: space-between;
+                p {
+                    font-size: 10px;
+                    margin-bottom: 4px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 500;
+                }
+                .return ,.popularity {
+                    padding-right: 30px;
+                }
+            }
+            button {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
 header {
     display: flex;
     justify-content: space-between;

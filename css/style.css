@@ -33,6 +33,158 @@ p {
   transition: 0.2s;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 2;
+  opacity: 80%;
+}
+
+.cookies {
+  display: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 24px 32px;
+}
+
+.cookies h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.cookies h3 a {
+  text-decoration: underline;
+}
+
+.cookies p {
+  font-size: 12px;
+  font-weight: 18px;
+}
+
+.cookies button {
+  width: 126px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.cookies .reject {
+  border: 1px solid #979797;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-left: 24px;
+  color: #414141;
+}
+
+.games {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 6px;
+  width: 700px;
+  height: auto;
+  z-index: 3;
+  background-color: #fff;
+  padding: 24px 32px;
+}
+
+.games_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.games_header h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 35px;
+  width: 50%;
+  color: #4E2F00;
+}
+
+.games_header h1 span {
+  font-weight: 700;
+}
+
+.games_header img {
+  cursor: pointer;
+  height: 24px;
+}
+
+.games_main {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.games_main-item {
+  width: 200px;
+}
+
+.games_main-item img {
+  border-radius: 6px;
+}
+
+.games_main-item h3 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #4E2F00;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 8px;
+}
+
+.games_main-item .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.games_main-item .rating p {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.games_main-item .rating span {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.games_main-item .rating .return, .games_main-item .rating .popularity {
+  padding-right: 30px;
+}
+
+.games_main-item button {
+  width: 100%;
+  margin-top: 20px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
