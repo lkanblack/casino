@@ -10,7 +10,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -35,11 +35,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>About us</h1>
+                <h1 class="about_title">About us</h1>
             </div>
-            <div class="col-md-10">
-                <p>LionSlotsWin is a place where you can experience the real thrill of online casino games but without the risk of losing any money as it’s completely free!</p>
-                <p>No obligatory registration, no need to download any software - just choose the game and start playing! You can try games from all of the top developers in the industry without spending a penny.</p>
+            <div class="col-md-12">
+                <div class="about_descr">
+                    <p>LionSlotsWin is a place where you can experience the real thrill of online casino games but without the risk of losing any money as it’s completely free!</p>
+                    <p>No obligatory registration, no need to download any software - just choose the game and start playing! You can try games from all of the top developers in the industry without spending a penny.</p>
+                </div>
+                <div class="about_form">
+                    <div class="first-section">
+                        <h3>Is there something you would like to share with us?</h3>
+                        <p>Feel free to send your suggestions or complaints via this form.</p>
+                    </div>
+                    <form action="POST">
+                        <div>
+                            <span>Your name</span>
+                            <input type="text">
+                            <span>Email</span>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <span>Message</span>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button class="orange-btn">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
