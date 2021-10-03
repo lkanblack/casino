@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="LionSlotsWin">
     <!-- OVERLAY -->
     <div class="overlay"></div>
     <!-- POPUP COOKIES -->
@@ -27,7 +27,7 @@
     <div class="games">
         <div class="games_header">
             <h1>Most popular free games in <span>Canada</span> in 2021</h1>
-            <img src="./img/close.svg" alt="X">
+            <img class="close" src="./img/close.svg" alt="X">
         </div>
         <div class="games_main">
             <div class="games_main-item">
@@ -76,9 +76,57 @@
                 <button class="orange-btn">Play now</button>
             </div>
         </div>
+        <div class="games_secondary">
+
+        </div>
     </div>
+    <!-- REGISTER MODAL -->
+    <div class="register_modal">
+        <div class="modal-header">
+            <h2>Open an account</h2>
+            <img class="reg_close" src="./img/close.svg" alt="X">
+        </div>
+        <form class="first-step steps">
+            <span>First name</span>
+            <input type="text" placeholder="John">
+            <span>Last name</span>
+            <input type="text" placeholder="Doe">
+            <span>Birthdate</span>
+            <input type="text" placeholder="24/01/1900">
+            <span>Email</span>
+            <input type="text" placeholder="john.doe@example.com">
+            <p>Already has an account? <a href="#" class="register_btn-modal">Log in</a></p>
+            <button class="grey-btn next-btn">Next</button>
+        </form>
+        <form class="second-step steps">
+            <span>Phone number</span>
+            <input type="text" placeholder="+1 800 000 000">
+            <span>Address</span>
+            <input type="text" placeholder="John Street 4-32, Overlake City">
+            <span>Password</span>
+            <input type="password" placeholder="***">
+            <span>Confirm Password</span>
+            <input type="password" placeholder="***">
+            <button class="orange-btn openAcc-btn">Open an account</button>
+            <button class="grey-btn back-btn">Back</button>
+        </form>
+    </div>
+    <!-- LOGIN MODAL -->
+    <div class="login_modal">
+        <div class="modal-header">
+            <h2>Log in</h2>
+            <img class="login_close" src="./img/close.svg" alt="X">
+        </div>  
+        <form class="login_modal-body steps">
+            <span>Email</span>
+            <input type="text" placeholder="john.doe@example.com">
+            <span>Password</span>
+            <input type="password" placeholder="***">
+            <p>Don’t have an account? <a href="#" class="register_modal-btn">Register</a></p>
+            <button class="orange-btn login_btn-modal">Log In</button>
 
-
+        </form>
+    </div>
 
     <!-- HEADER -->
     <div class="container">
@@ -102,7 +150,7 @@
                 <div class="hero">
                     <h1>Best Online Slots and Casino Games</h1>
                     <p>Play the top-notch games without a need to deposit any real money!</p>
-                    <button class="orange-btn">Start Playing Now</button>
+                    <button class="orange-btn start-btn">Start Playing Now</button>
                     <div class="terms">
                         <div class="term-block">
                             <img src="./img/protect.svg" alt="protect">
@@ -136,7 +184,7 @@
         <div class="row">
             <div class="col-md-12">
                 <footer>
-                    <a href="#">About Us</a>
+                    <a href="./about.html">About Us</a>
                     <a href="#">Terms and conditions</a>
                     <p class="sub-text">© Copyright LionSlotsWin 2021. Play the best online slots games from the leading developers for free. No real money can be spent or won. 18+. </p>
                 </footer>
@@ -158,5 +206,6 @@
     <!-- MY SCRIPTS -->
     <script src="js/cookies.js"></script>
     <script src="js/games.js"></script>
+    <script src="js/log-reg.js"></script>
 </body>
 </html>

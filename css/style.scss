@@ -3,6 +3,7 @@ $dark-grey: #414141;
 $grey: #616161;
 $light-grey: #BDBDBD;
 $dim-grey: #979797;
+$gold: #F0AA41;
 
 $roboto: 'Roboto', sans-serif;
 $roboto-slab: 'Roboto Slab', sans-serif;
@@ -11,7 +12,7 @@ $roboto-slab: 'Roboto Slab', sans-serif;
 body,* {
     font-family: $roboto;
 }
-body {
+.LionSlotsWin {
     background-image: url(../img/bg.svg);
     background-repeat: no-repeat;
     background-position: 100% 40%;
@@ -37,6 +38,7 @@ p {
     }
 }
 .overlay {
+    display: none;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -46,6 +48,10 @@ p {
     z-index: 2;
     opacity: 80%;
 }
+.active {
+    color: $gold;
+}
+// POPUP
 .cookies {
     display: none;
     position: absolute;
@@ -85,7 +91,119 @@ p {
         color: $dark-grey;
     }
 }
+// MODAL GENERAL CLASSES
+.modal-header {
+    display: flex;
+    padding: 0;
+    border: none;
+        justify-content: space-between;
+        h2 {
+            color: $brown;
+            font-family: $roboto-slab;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0;
+        }
+        img {
+            cursor: pointer;
+        }
+}
+.steps {
+    margin-top: 24px;
+    span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    input {
+        width: 100%;
+        border: 1px solid $light-grey;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        height: 32px;
+        padding: 6px 12px;
+        &::placeholder {
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    p {
+        display: inline;
+        margin-bottom: 0;
+        color: $light-grey;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        a {
+            color: #295feb;
+            font-weight: 500;
+        }
+    }
+    .grey-btn {
+        padding: 6px 12px;
+        background-color: none;
+        float: right;
+        background-color: #fff;
+        border:1px solid $light-grey;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .openAcc-btn {
+        display: inline;
+        float: right;
+        padding: 6px 12px;
+        font-weight: 500;
+        line-height: 14px;
+        line-height: 20px;
+    }
+    .back-btn {
+        float: left;
+    }
+}
+// MODALS
+.register_modal {
+    display: none;
+    width: 420px;
+    height: auto;
+    padding: 24px 32px;
+    position: absolute;
+    border-radius: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: #fff;
+
+    .second-step {
+        display: none;
+    }
+}
+.login_modal {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    background-color: #fff;
+    z-index: 3;
+    padding: 24px 32px;
+    .login_btn-modal {
+        display: inline;
+        float: right;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
 .games {
+    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -153,7 +271,6 @@ p {
         }
     }
 }
-
 
 header {
     display: flex;
