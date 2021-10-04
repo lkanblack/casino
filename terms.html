@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LionSlotsWin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+      <!-- OVERLAY -->
+      <div class="overlay"></div>
+      <!-- POPUP COOKIES -->
+      <div class="cookies">
+          <h3>We use cookies to improve your experience (<a href="#">Cookie Policy</a>).</h3>
+          <p>By clicking “Accept” you consent to our website’s use of cookies. </p>
+          <button class="orange-btn accept">Accept</button>
+          <button class="reject">Reject</button>
+      </div>
+      <!-- MODAL GAMES -->
+      <div class="games">
+          <div class="games_header">
+              <h1>Most popular free games in <span>Canada</span> in 2021</h1>
+              <img class="close" src="./img/close.svg" alt="X">
+          </div>
+          <div class="games_main">
+              <div class="games_main-item">
+                  <img src="./img/games/medusa.svg" alt="medusa">
+                  <h3>Medusa’s Curse</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>96.21%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+              <div class="games_main-item">
+                  <img src="./img/games/goldenpig.svg" alt="pig">
+                  <h3>Golden Pig</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>95.83%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+              <div class="games_main-item">
+                  <img src="./img/games/heroes.svg" alt="heroes">
+                  <h3>Battle Heroes</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>95.62%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+          </div>
+          <div class="games_secondary">
+  
+          </div>
+      </div>
+      <!-- REGISTER MODAL -->
+      <div class="register_modal">
+          <div class="modal-header">
+              <h2>Open an account</h2>
+              <img class="reg_close" src="./img/close.svg" alt="X">
+          </div>
+          <form class="first-step steps">
+              <span>First name</span>
+              <input type="text" placeholder="John">
+              <span>Last name</span>
+              <input type="text" placeholder="Doe">
+              <span>Birthdate</span>
+              <input type="text" placeholder="24/01/1900">
+              <span>Email</span>
+              <input type="text" placeholder="john.doe@example.com">
+              <p>Already has an account? <a href="#" class="register_btn-modal">Log in</a></p>
+              <button class="grey-btn next-btn">Next</button>
+          </form>
+          <form class="second-step steps">
+              <span>Phone number</span>
+              <input type="text" placeholder="+1 800 000 000">
+              <span>Address</span>
+              <input type="text" placeholder="John Street 4-32, Overlake City">
+              <span>Password</span>
+              <input type="password" placeholder="***">
+              <span>Confirm Password</span>
+              <input type="password" placeholder="***">
+              <button class="orange-btn openAcc-btn">Open an account</button>
+              <button class="grey-btn back-btn">Back</button>
+          </form>
+      </div>
+      <!-- LOGIN MODAL -->
+      <div class="login_modal">
+          <div class="modal-header">
+              <h2>Log in</h2>
+              <img class="login_close" src="./img/close.svg" alt="X">
+          </div>  
+          <form class="login_modal-body steps">
+              <span>Email</span>
+              <input type="text" placeholder="john.doe@example.com">
+              <span>Password</span>
+              <input type="password" placeholder="***">
+              <p>Don’t have an account? <a href="#" class="register_modal-btn">Register</a></p>
+              <button class="orange-btn login_btn-modal">Log In</button>
+  
+          </form>
+      </div>
+
+    <!-- HEADER -->
+    <div class="container">
+        <div class="col-md-12">
+            <header>
+                <div class="logo">
+                    <a href="/"><img src="./img/Logo.svg" alt="logo"></a>
+                </div>
+                <div class="header_btns">
+                    <button class="login-btn btn">Log in</button>
+                    <button class="register-btn btn">Register</button>
+                </div>
+            </header>
+        </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="terms">
+                    <div class="terms-block">
+                        <h1>Terms and conditions</h1>
+                        <p>LionSlotsWin is a social casino. This page contains Terms of use exclusively. Before using our website, you must carefully read the Terms of Service. Launching our games with the Service signifies that:</p>
+                        <ul>
+                            <li> you have familiarized yourself with the Terms of Service and accept them in their entirety</li>
+                            <li>you agree not to use the Service in an unlawful manner</li>
+                            <li>you agree to be bound by the rules set out in the Game Etiquette</li>
+                            <li>you have read and approved the Rules for Responsible Gaming</li>
+                            <li>you agree that your personal data may be processed to the extent specified in the Privacy Policy.</li>
+                        </ul>
+                    </div>
+                    <div class="terms-block">
+                        <h3>General Provisions</h3>
+                        <p>1.1. The Terms of Service define the rules for the use by individual users (hereinafter referred to as the „Users“) of interactive services (hereinafter referred to as the „Services“) offered by the Service Provider through the Internet service with the following name: LionSlotsWin Social Online Casino (hereinafter referred to as the „Service“).</p>
+                        <p>1.2. The services offered by the Service Provider shall consist in providing registered Service Users („Members“) with access to the service comprising a game platform operated for entertainment purposes, as well as to allow Users to get in touch and share information and opinions with other persons interested in games, and to improve their knowledge of game-related topics.</p>
+                        <p>1.3. As part of the services offered by the Service Provider, Members may participate in games in which scoring depends on their speed of reaction, dexterity and perceptive skills. To become the winner, a player must score the most points in a relevant play that requires the application of the above-mentioned skills, or in games in which scoring or the final result depends, to a certain degree or solely, on chance.</p>
+                        <p>1.4. Using the services made available via the Service and applying for Service membership shall be tantamount to acknowledging and accepting the terms and conditions set forth herein and to being bound by such terms and conditions each time when the Service is accessed. Users who visit the Service without having registered as Members shall be bound by the Terms of Service to the extent stipulated in the Act on Provision of Services by Electronic Means.</p>
+                        <p>1.5. The Service Provider wishes to communicate that it shall not enter into agreements with Service Users or Members on an individual basis. All Service Users and Members who use the services made available by the Service Provider via the Service shall comply exclusively with these Terms of Service.</p>
+                        <p>1.6. The Terms of Service may be viewed and printed out at any time.</p>
+                        <p>1.7. The ability to fully enjoy all features of the games accessible via the Service depends on the player’s computer or mobile device meets certain technical requirements. Service Users are solely responsible for ensuring technical compatibility between their devices and the Service.</p>
+                        <p>1.8. The Service Provider shall bear no responsibility for unavailability of the Service attributable to factors beyond its control or to unforeseen circumstances. Furthermore, the Service Provider reserves the right to suspend or terminate the provision of the services via the Service at any time and for any reason, in particular when the Service needs to undergo maintenance work, review or technical expansion, subject to prior notice being given to the Service Users and registered Members.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Membership and registration</h3>
+                        <p>2.1 To play games available via the Service, Users must certify they are over 18 years old.</p>
+                        <p>2.3 The Service Provider wishes to advise the Service Users that, since the outcome of a number of plays in games made available via the Service depends on the speed of reaction, dexterity and perceptive skills of players, persons suffering from certain kinds of disabilities, especially vision impairment or motor disability, may find it difficult to use the Service. The Service Provider informs that, given the current level of IT technology advancement, it has no means of ensuring special access to the Service for the disabled persons. Concurrently, the Service Provider wishes to assure the Service Users that, as soon as technologically feasible, it will provide such persons with access to plays available via the Service.</p>
+                        <p>2.4 If a User registering for Service membership expresses such wish, he/she shall obtain access to the services offered by the Service Provider immediately upon registration. In such a case, the User has no right to withdraw from the agreement in accordance with the Act on Protection of Certain Consumer Rights. In each case, a User shall lose the right to withdraw from the agreement concluded with the Service Provider from the moment he/she first plays in a play provided via the Service.</p>
+                        <p>2.5 If the information provided by a Member upon registration is found to be misleading, incomplete or inaccurate, the Service Provider shall have the right to remove such Member’s account from the Service and disregard his/her registration. In such a case, the Member has no right to raise any claims in relation to loss of Service membership.</p>
+                        <p>2.6 The Service Provider may demand that a Member change his/her password or other login name details in the interests of security or for other important organizational or technical reasons.</p>
+                        <p>2.7 The Service Provider reserves the right to remove a Member Account from the Service, if the Account has not been used for at least one year since the last login date.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Playing rules</h3>
+                        <p>3.1 To take part in certain games offered via the Service, Members need to possess Game Chips. Game Chips may be allocated to Members free of charge or acquired for play by users for a price stated in the price schedule, or else obtained free of charge in accordance with the terms of any promotion organized by the Service Provider as part of the Service operation.</p>
+                        <p>3.2 The playing rules, scoring, participation issues and game instructions are set forth in reference sections accompanying each game made available by the Service Provider.</p>
+                        <p>3.3 Following the end of a play, the Service Provider shall disclose the Login Name details and scoring results of individual participants. The above data will also be included in the high score tables.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Rules for responsible gaming</h3>
+                        <p>The purpose of the Internet Service is to provide its users with entertainment, enable them to get involved in contacts and discussions with other users sharing the same interests, and upgrade their knowledge on the issues of gaming. Making the Service available to the public we hope, that all its users will use the services provided in the Service for that purpose. It can happen however that using services provided in the Service, instead of its being the source of entertainment, will become for some users the way of spending excessive amounts of time. Such cases are rare and above all possible to avoid if only the following basic rules are observed:</p>
+                        <ul class="mb-13">
+                            <li>I play for fun.</li>
+                            <li>I play for ranking points of no real value, I’m aware the only value of them is my satisfaction.</li>
+                            <li>I try to win, but I never try to take revenge.</li>
+                            <li>I can spend my free time also doing things other than playing games.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- FOOTER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <a href="#">About Us</a>
+                    <a href="#" class="active">Terms and conditions</a>
+                    <p class="sub-text">© Copyright LionSlotsWin 2021. Play the best online slots games from the leading developers for free. No real money can be spent or won. 18+. </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MY SCRIPTS -->
+    <script src="js/cookies.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/log-reg.js"></script>
+</body>
+</html>

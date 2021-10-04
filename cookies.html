@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LionSlotsWin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+      <!-- OVERLAY -->
+      <div class="overlay cookies-policuty-overlay"></div>
+      <!-- POPUP COOKIES -->
+      <!-- <div class="cookies">
+          <h3>We use cookies to improve your experience (<a class="cookies-btn" href="#">Cookie Policy</a>).</h3>
+          <p>By clicking “Accept” you consent to our website’s use of cookies. </p>
+          <button class="orange-btn accept">Accept</button>
+          <button class="reject">Reject</button>
+      </div> -->
+      <!-- MODAL GAMES -->
+      <div class="games">
+          <div class="games_header">
+              <h1>Most popular free games in <span>Canada</span> in 2021</h1>
+              <img class="close" src="./img/close.svg" alt="X">
+          </div>
+          <div class="games_main">
+              <div class="games_main-item">
+                  <img src="./img/games/medusa.svg" alt="medusa">
+                  <h3>Medusa’s Curse</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>96.21%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+              <div class="games_main-item">
+                  <img src="./img/games/goldenpig.svg" alt="pig">
+                  <h3>Golden Pig</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>95.83%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+              <div class="games_main-item">
+                  <img src="./img/games/heroes.svg" alt="heroes">
+                  <h3>Battle Heroes</h3>
+                  <div class="rating">
+                      <div class="return">
+                          <p>Return to player</p>
+                          <span>95.62%</span>
+                      </div>
+                      <div class="popularity">
+                          <p>Popularity</p>
+                          <span>Very High</span>
+                      </div>
+                  </div>
+                  <button class="orange-btn">Play now</button>
+              </div>
+          </div>
+          <div class="games_secondary">
+  
+          </div>
+      </div>
+      <!-- REGISTER MODAL -->
+      <div class="register_modal">
+          <div class="modal-header">
+              <h2>Open an account</h2>
+              <img class="reg_close" src="./img/close.svg" alt="X">
+          </div>
+          <form class="first-step steps">
+              <span>First name</span>
+              <input type="text" placeholder="John">
+              <span>Last name</span>
+              <input type="text" placeholder="Doe">
+              <span>Birthdate</span>
+              <input type="text" placeholder="24/01/1900">
+              <span>Email</span>
+              <input type="text" placeholder="john.doe@example.com">
+              <p>Already has an account? <a href="#" class="register_btn-modal">Log in</a></p>
+              <button class="grey-btn next-btn">Next</button>
+          </form>
+          <form class="second-step steps">
+              <span>Phone number</span>
+              <input type="text" placeholder="+1 800 000 000">
+              <span>Address</span>
+              <input type="text" placeholder="John Street 4-32, Overlake City">
+              <span>Password</span>
+              <input type="password" placeholder="***">
+              <span>Confirm Password</span>
+              <input type="password" placeholder="***">
+              <button class="orange-btn openAcc-btn">Open an account</button>
+              <button class="grey-btn back-btn">Back</button>
+          </form>
+      </div>
+      <!-- LOGIN MODAL -->
+      <div class="login_modal">
+          <div class="modal-header">
+              <h2>Log in</h2>
+              <img class="login_close" src="./img/close.svg" alt="X">
+          </div>  
+          <form class="login_modal-body steps">
+              <span>Email</span>
+              <input type="text" placeholder="john.doe@example.com">
+              <span>Password</span>
+              <input type="password" placeholder="***">
+              <p>Don’t have an account? <a href="#" class="register_modal-btn">Register</a></p>
+              <button class="orange-btn login_btn-modal">Log In</button>
+  
+          </form>
+      </div>
+
+    <!-- HEADER -->
+    <div class="container">
+        <div class="col-md-12">
+            <header>
+                <div class="logo">
+                    <a href="/"><img src="./img/Logo.svg" alt="logo"></a>
+                </div>
+                <div class="header_btns">
+                    <button class="login-btn btn">Log in</button>
+                    <button class="register-btn btn">Register</button>
+                </div>
+            </header>
+        </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="terms">
+                    <div class="terms-block">
+                        <h1>Cookie Policy</h1>
+                        <p>LionSlotsWin Social Online Casino is a social casino. This page regards LionSlotsWin cookie policy exclusively. </p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>What are cookies?</h3>
+                        <p>This website uses – like most other sites – cookies. Cookies are small text files that will be stored on your computer, phone, tablet or comparable unit with the purpose of recognizing the device, remembering preferences, creating statistics and target adverts. Cookies can contain text, numbers or dates but no personal data is stored in a cookie, and they cannot contain malicious code (e.g. a virus). We, and the following data processors have access to the data stored: </p>
+                        <ul class="p-0">
+                            <li class="list-unstyled">Microsoft Ltd.,</li>
+                            <li class="list-unstyled">Cloudflare, Inc.,</li>
+                            <li class="list-unstyled">Google Ltd.,</li>
+                            <li class="list-unstyled">Facebook Ltd.</li>
+                        </ul>
+                        <p>When you use our website you accept the use of cookies, including third party cookies, but it is at any given time possible to delete or block cookies. In the bottom of this page you can see which cookies are stored on your computer, mobile phone, tablet or other device when you use our website.</p>
+                        <p>If you delete or block cookies adverts will become less relevant for you and appear more often. You may also experience that the website does not function perfectly and there may be content you do not have access to.</p>
+                        <p>Cookies are also stored in log files that are collected from the site’s users. Log files are generated from all websites and this site is no exception. Basically log files contain an overview over 1) which pages that have been visited on the site, 2) when they have been visited, and 3) where they have been accessed from, which means the log files collect the user’s IP address. Based on the collected log file data we are only able to see what city you access the site from and not your exact geographic location. You can read more about how we process your personal data, including your IP address in our privacy policy.</p>
+                        <p>Said log files will be used both for monitoring traffic on the site and as a security measure. One of the reasons why we collect IP-adresses is that we can use them to prevent hacker attacks.</p>
+                        <p>If we in the log files can see an unusual pattern in where the traffic is coming from it can be a sign of an attempted hacker attack. By monitoring the users’ location via IP-addresses we are better equipped to prevent hacker attacks.</p>
+                        <p>Log files, including IP-addresses are stored for 5 years before they are deleted.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>What do we use cookies for?</h3>
+                        <p>We use cookies for an array of purposes, such as optimizing our marketing efforts and your user experience and also to secure and improve our websites technical functionality.</p>
+                        <p>Some of the data we collect through cookies is used to analyse our users’ behaviour on the site. The cookies can give us an overview of what type of devices the site is accessed via, what pages the users visit, what marketing channels the users come from, and how long time they spend on the site. If users click on ads or affiliate links on the site it will also be registered and included in our analyses of the site.</p>
+                        <p>We use the data to optimize our own marketing efforts and as a tool to improve user experience and optimize our website plus to target online ads, so you will be presented with ads that are more relevant for you.</p>
+                        <p>Cookies are also used to make the website more functional for its users. The use of cookies means that the users do not have to download as much data when revisiting the site, and that the site can remember the users’ preferences. That optimizes the user experience, the loading of content and the site’s response time.</p>
+                        <p>The use of cookies makes it possible to make on-going adaptations on the site to match the user needs identified through their behaviour.</p>
+                        <p>Besides us, certain third parties also leave cookies on your hard drive when using the site. You can read more about which third parties under “Third party plugins that leave cookies”.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>What cookies do we use?</h3>
+                        <p>You can see a list of the cookies that are stored on your hard drive, mobile or tablet when you use our site, at the bottom of this page. In the following we will elaborate on the use of different types of cookies.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Heat maps</h3>
+                        <p>Periodically the website uses heat maps, which show the users whereabouts on the site. This data and information about this will be stored.</p>
+                        <p>Specifically heat map is a tool to identify how the specific movement of the users on the website happens, and can be useful to know in the process of optimizing our website and its layout.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Cookies used for analysis</h3>
+                        <p>The site uses ”Google Analytics” to analyse from which geographical locations the users access the site. That can be identified via the users’ IP-addresses.</p>
+                        <p>The geographical location means – as mentioned earlier – that we are unable to see the users’ addresses or exact locations, however the level of detail is that we can see from which city the user accesses the site from.</p>
+                        <p>The reason why we obtain information on the user’s geographical location is first and foremost to make sure that we only permit access to user’s that are not restricted due to local legislation on gambling.</p>
+                        <p>The site also collects anonymous statistics of the user’s visits on the site, including the number of visits, the average time spent on the site and which pages have been loaded. The aim is to segment the site’s users based on factors such as demographics and geography, which makes it possible to structure and understand the target audience with a view to present online ads to them.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>Targeted advertising</h3>
+                        <p>On the website you may encounter various external plugins, such as embedded Youtube videos or similar features. These plugins may leave a cookie on your hard drive, mobile phone or tablet. This category of cookies stems from third party services on the site.</p>
+                        <p>Common third party cookies include:</p>
+                        <ul>
+                            <li>Youtube – May figure on the site due to embedded videos on the site</li>
+                            <li>Affiliate link cookies – May figure on the site du to us linking to the gaming providers (casinos, poker sites, bingo sites and betting sites)</li>
+                        </ul>
+                        <p>The reason why we have included these features on the site is that it may allow us to offer our users more features (such as videos) and other advantages.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>How long do we store user information?</h3>
+                        <p>Information about the users’ visits on the site is stored for up to 26 months in Google Analytics. If a user visits the site again during the 26 months the storage period will restart and be stored for 26 months from that moment. That is also known as ‘data retention’.</p>
+                        <p>Data collection is in accordance with Google’s guidelines and does not contain any personal information of the users.</p>
+                        <p>The aim of the on-going collection of data and storage of data in up to 26 months is to give our users the best possible experience on our site.</p>
+                        <p>Google Analytics data is stored for up to 26 months to be able to create statistics of the site’s annual development and to have comparable data going back, and to measure the site’s traffic.</p>
+                        <p>Users that have interacted with or visited the site via Facebook Marketing will be stored in a Facebook Pixel for up to 180 days, in accordance with Facebook’s guidelines. All data is anonymised by Facebook.</p>
+                        <p>The aim of the Facebook Pixel is to target ads and marketing from the site via Facebook and to present the users with ads matching their interests and needs.</p>
+                    </div>
+                    <div class="terms-block">
+                        <h3>How can I avoid cookies?</h3>
+                        <p>If you do not want to store cookies on your hard drive, mobile phone or tablet you can delete them any time, which is simple and not very time consuming. You can find a guide to deleting cookies on the following link: <a href="https://www.digitaltrends.com/computing/how-to-delete-cookies.">https://www.digitaltrends.com/computing/how-to-delete-cookies.</a></p>
+                        <p>If you do not wish that your hard drive, mobile phone or tablet stores cookies when you are surfing online you can choose to block all cookies or to receive a warning every time your computer, mobile phone or tablet wants to store a cookie. In the following link you can find a guide on how to change the settings of your browser to block cookies: <a href="https://www.wikihow.com/Disable-Cookies">https://www.wikihow.com/Disable-Cookies</a></p>
+                    </div>
+                    <div class="terms-block mb-13">
+                        <h3>Contact information</h3>
+                        <p>If you have any complaints or questions about how cookies, personal data or other information about your behaviour on the site is used, you are welcome to contact us via email. All inquiries and questions will be treated seriously and answered as quickly as possible.</p>
+
+                        <p>Contact</p>
+                        <p><a class="grey-link" href="mailto:info@lionslotswin.com">info@lionslotswin.com</a></p>
+                        <p>Updated: 2021-09-16</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- FOOTER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <a href="#">About Us</a>
+                    <a href="#">Terms and conditions</a>
+                    <p class="sub-text">© Copyright LionSlotsWin 2021. Play the best online slots games from the leading developers for free. No real money can be spent or won. 18+. </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MY SCRIPTS -->
+    <script src="js/cookies.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/log-reg.js"></script>
+</body>
+</html>
