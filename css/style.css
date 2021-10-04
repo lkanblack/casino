@@ -33,6 +33,7 @@ p {
 }
 
 .overlay {
+  display: none;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -61,6 +62,7 @@ p {
 }
 
 .cookies {
+  display: none;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -412,6 +414,10 @@ p {
   display: none;
 }
 
+.games_mobile {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -666,5 +672,204 @@ footer p {
 .terms-block p {
   margin-bottom: 16px;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 420px) {
+  .cookies {
+    width: 100%;
+    bottom: 0;
+  }
+  .cookies button {
+    width: 100%;
+    height: 40px;
+  }
+  .cookies .reject {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  header .register-btn {
+    display: none;
+  }
+  .hero {
+    margin-top: 56px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .hero p {
+    width: 75%;
+    font-size: 14px;
+  }
+  .terms {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .terms .term-block {
+    margin-bottom: 24px;
+  }
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 36px;
+  }
+  footer p {
+    display: block;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .terms h1 {
+    margin-top: 56px;
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+  .terms p {
+    font-size: 14px;
+  }
+  .terms ul li {
+    font-size: 14px;
+  }
+  .terms h3 {
+    font-size: 23px;
+  }
+  .about_title {
+    margin-top: 56px;
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+  .about_descr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_descr p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .about_form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_form h3 {
+    font-size: 22px;
+    line-height: 39px;
+    font-weight: 300;
+  }
+  .about_form p {
+    font-size: 14px;
+  }
+  .about_form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_form form textarea, .about_form form input {
+    width: 100%;
+  }
+  .about_form form textarea::-webkit-input-placeholder, .about_form form input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .about_form form textarea:-ms-input-placeholder, .about_form form input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .about_form form textarea::-ms-input-placeholder, .about_form form input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .about_form form textarea::placeholder, .about_form form input::placeholder {
+    font-size: 12px;
+  }
+  .about_form form button {
+    width: 100%;
+  }
+  .games {
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .games h1 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .games .close {
+    margin-top: 7px;
+  }
+  .games_main {
+    display: none;
+  }
+  .games_secondary {
+    display: none;
+  }
+  .games_mobile {
+    display: block;
+    margin-top: 24px;
+  }
+  .games_mobile-item {
+    margin-bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .games_mobile-item img {
+    width: 64px;
+    height: 48px;
+    margin-right: 16px;
+  }
+  .games_mobile-item h4 {
+    color: #4E2F00;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "Roboto Slab", sans-serif;
+  }
+  .games_mobile-item .descr img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+  .games_mobile-item .descr span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 16px;
+  }
+  .games_mobile-item .right-arrow {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .games_mobile-item .right-arrow img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    float: right;
+  }
+  .login_modal {
+    width: 100%;
+    padding: 16px;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .login_modal button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
