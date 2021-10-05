@@ -38,7 +38,6 @@ p {
     }
 }
 .overlay {
-    display: none;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -63,7 +62,6 @@ p {
 }
 // POPUP
 .cookies {
-    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
