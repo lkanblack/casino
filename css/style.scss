@@ -528,7 +528,46 @@ footer {
 
 // @MEDIA 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 991px) {
+    .LionSlotsWin {
+        background-size: 45%;
+    }
+    .hero {
+        margin-top: 100px;
+        h1 {
+            font-size: 42px;
+            width: 70%;
+        }
+        p {
+            width: 50%;
+        }
+    }
+    .terms {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 200px;
+        .term-block {
+            margin-bottom: 16px;
+        }
+    }
+    footer {
+        flex-wrap: wrap;
+        p {
+            margin: 0;
+        }
+
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .hero {
+        h1 {
+            font-size: 32px;
+            line-height: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 460px) {
     .cookies {
         width: 100%;
         bottom: 0;
@@ -708,8 +747,17 @@ footer {
         width: 100%;
         padding: 16px;
         flex-flow: wrap;
-        button {
-            width: 100%;
+        form {
+            display: flex;
+            flex-direction: column;
+            p {
+                order: 2;
+            }
+            button {
+                order: 1;
+                width: 100%;
+                margin-bottom: 24px;
+            }
         }
     }
   }
