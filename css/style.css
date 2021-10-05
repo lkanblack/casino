@@ -716,6 +716,12 @@ footer p {
 }
 
 @media only screen and (max-width: 460px) {
+  .LionSlotsWin {
+    background-image: url(../img/mobile/mobile-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 45%;
+    background-size: 80%;
+  }
   .cookies {
     width: 100%;
     bottom: 0;
@@ -744,14 +750,14 @@ footer p {
     width: 75%;
     font-size: 14px;
   }
-  .terms {
-    margin: 0;
+  .hero .terms {
+    margin-top: 220px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .terms .term-block {
+  .hero .terms .term-block {
     margin-bottom: 24px;
   }
   footer {
