@@ -17,7 +17,7 @@ body,* {
     background-image: url(../img/bg.svg);
     background-repeat: no-repeat;
     background-position: 100% 40%;
-    background-size: 55%;
+    background-size: 45%;
      
 }
 p {
@@ -345,7 +345,7 @@ header {
     }
 }
 .hero {
-    height: 90vh;
+    height: 70vh;
     margin-top: 140px;
     z-index: 2;
     h1 {
@@ -365,7 +365,7 @@ header {
         font-weight: 400;
     }
     .terms {
-        margin-top: 140px;
+        margin-top: 15%;
         display: flex;
         .term-block {
             margin-right: 20px;
@@ -526,12 +526,23 @@ footer {
 
 // @MEDIA 
 
+@media only screen and (max-width: 1440px) {
+    .hero {
+        height: auto;
+        .terms {
+            margin: 0;
+            margin: 50px 0px;
+        }
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .LionSlotsWin {
         background-size: 45%;
     }
     .hero {
         margin-top: 100px;
+        height: 100%;
         h1 {
             font-size: 42px;
             width: 70%;
